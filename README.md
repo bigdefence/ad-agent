@@ -1,30 +1,61 @@
-# Cosmetic Ad Agent
+# LUMIÈRE AI Studio - AI Cosmetic Ad Generator
 
-This agent generates professional cosmetic advertisement images using the `gemini-3-pro-image-preview` model.
+**LUMIÈRE AI Studio** is an AI-powered web application designed to generate professional-grade cosmetic advertisements. By analyzing a product image and user-defined constraints, it creates high-quality ad concepts and final visuals using Google's Gemini models.
 
-## Setup
+## 🌟 Features
 
-1.  **Install Dependencies**:
+-   **AI Concept Generation**: Uses `gemini-2.5-flash` to analyze product images and generate detailed, creative ad prompts based on target audience and brand mood.
+-   **Dual Ad Generation**:
+    -   **Product Focus**: Generates a high-end ad visual where the product is the hero.
+    -   **Model Focus**: Generates a realistic lifestyle ad featuring a model matching the target audience.
+-   **Powered by Gemini 3**: Utilizes the `gemini-3-pro-image-preview` model for state-of-the-art image generation.
+-   **Web Interface**: Easy-to-use Flask web application for uploading images and setting parameters.
+
+## 🛠️ Tech Stack
+
+-   **Python**
+-   **Flask** (Web Framework)
+-   **Google Gemini API** (`gemini-2.5-flash`, `gemini-3-pro-image-preview`)
+-   **Pillow (PIL)** (Image Processing)
+
+## 🚀 Setup
+
+1.  **Clone the repository**:
+    ```bash
+    git clone [repository-url]
+    cd [repository-directory]
+    ```
+
+2.  **Install Dependencies**:
     ```bash
     pip install -r requirements.txt
     ```
 
-2.  **API Key**:
-    Set your Google Cloud API key in a `.env` file or as an environment variable:
+3.  **Environment Configuration**:
+    Create a `.env` file in the root directory and add your Google Cloud API key:
     ```
     GOOGLE_API_KEY=your_api_key_here
     ```
 
-## Usage
+## 💻 Usage
 
-Run the script with the path to your product image:
+1.  **Start the Application**:
+    ```bash
+    python app.py
+    ```
 
-```bash
-python main.py --image path/to/your/product.jpg
-```
+2.  **Access the Web Interface**:
+    Open your browser and navigate to `http://localhost:5000`.
 
-## Output
+3.  **Generate Ads**:
+    -   **Upload Image**: Select your cosmetic product image.
+    -   **Target Audience**: Specify the target demographic (e.g., "20s Female", "Luxury Skincare Users").
+    -   **Channel**: Choose the ad platform (e.g., "Instagram", "Billboard").
+    -   **Styles**: Select or enter style keywords (e.g., "Minimalist", "Elegant", "Neon").
+    -   Click **Generate** to create your ad campaign.
 
-The script will generate two images in the current directory:
-1.  `output_product_ad.png`: A high-end ad focusing solely on the product.
-2.  `output_model_ad.png`: An ad featuring a realistic model holding the product.
+## 📂 Project Structure
+
+-   `app.py`: Main Flask application file containing routes and Gemini API integration logic.
+-   `templates/`: HTML templates for the web interface.
+-   `requirements.txt`: List of Python dependencies.
