@@ -50,7 +50,7 @@
 3.  **Generate Ads**:
     -   **Upload Image**: Select your cosmetic product image.
     -   **Target Audience**: Specify the target demographic (e.g., "20s Female", "Luxury Skincare Users").
-    -   **Channel**: Choose the ad platform (e.g., "Instagram", "Billboard").
+    -   **Channel**: Choose the ad platform (e.g., "Instagram").
     -   **Styles**: Select or enter style keywords (e.g., "Minimalist", "Elegant", "Neon").
     -   Click **Generate** to create your ad campaign.
 
